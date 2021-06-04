@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bubble Game</title>
+</head>
+
+<body>
+    <div id="main">
+        <div id="top">
+            <h3 id="heading">Bubble Guess Game</h3>
+            <button onclick="reloadPage()">Reset</button>
+        </div>
+        <div id="back">
+            <div id="info">
+                <h3 class="text">Click on : <span id="guess"></span></h3>
+                <h3 class="text">Time remaining : <span id="timer">60</span>s</h3>
+                <h3 class="text">Your score : <span id="score"></span></h3>
+            </div>
+            <div id="circles">
+                <!-- <div class="circle">8</div> -->
+            </div>
+            <div id="timeOut">
+                <h2>Time Out</h2>
+                <h3>Your score : <span id="toscore"></span></h3>
+                <button id="play" onclick="reloadPage()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
